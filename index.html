@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body class="overflow-x-hidden">
+    <header class="bg-white-200 h-screen">
+        <nav class="fixed top-0 left-0 right-0 bg-white px-10 py-6 flex justify-between">
+            <div class="flex">
+                <img class="h-12" src="Images/stethoscope 1.png" alt="logo">
+                <img class="w-32 h-10" src="Images/SmartCare.png" alt="">
+            </div>
+            <div class="flex pt-2 font-semibold">
+                <div class="flex gap-10 cursor-pointer items-center justify-center">
+                    <a href="#home" class="text-teal-900 hover:text-teal-600">Home</a>
+                    <a href="#services" class="text-teal-900 hover:text-teal-600">Service</a>
+                    <a href="" class="text-teal-900 hover:text-teal-600">Contact us</a>
+                    <button class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-teal-500 rounded-md group">
+                        <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-teal-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                        <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                        </span>
+                        <span class="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-teal-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                        <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                        </span>
+                        <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-teal-600 rounded-md group-hover:translate-x-0"></span>
+                        <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">Get Appoinment</span> 
+                    </button>
+                </div>                
+            </div>
+        </nav>
+
+        <div id="home" class="ml-10 p-10 mr-10">
+            <h1 class="font-bold text-3xl mt-24 mb-5 ml-16">Hello, Mr. <span class="text-teal-700">Joyant</span></h1>
+            <div class="flex justify-around bg-gradient-to-l from-teal-300 to-teal-100 rounded-[30px]">
+                <div class="pt-5">
+                    <h1 class="font-bold text-teal-900 text-6xl pt-10 pb-7">Providing Quality <br>Healthcare</h1>
+                    <p class="font-semibold text-teal-800 text-xl">We are committed to delivering compassionate and comprehensive <br> healthcare services. Our team of dedicated professionals ensures that <br> each patient receives personalized and high-quality care, promoting <br> wellness and well-being at every stage of life. <br> Trust us for a healthier, brighter future.</p>              
+                </div>                
+                <div class="w-96 h-96 overflow-hidden">
+                    <img class="w-full object-cover" src="Images/doc.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="h-screen" id="services">
+        <div class="text-center flex flex-col gap-8">
+            <h1 class="font-bold mt-24 text-teal-600 text-5xl">Services We Provide</h1>
+            <p class="font-semibold text-teal-900 text-xl">We offer a comprehensive range of healthcare services designed to meet your <br> needs with compassion and expertise. Our commitment is to deliver high-quality care, <br> from preventative screenings to specialized treatments, ensuring a healthier, happier life for every patient.</p>            
+        </div>
+
+        
+        <div class="services-slider swiper flex justify-center items-center mt-10 gap-4">
+            <div class="relative flex mx-auto items-center overflow-hidden w-[70%]">
+                <!-- Carousel Content -->
+                <div class="flex mx-5 gap-10 transition-transform duration-300" id="carousel">
+                    <!-- Add your slides here -->
+                </div>
+            </div>
+        
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <!-- Swiper JS -->
+        <script>
+            const swiper = new Swiper('.services-slider', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    1280: {
+                        slidesPerView: 4,
+                    },
+                    1600: {
+                        slidesPerView: 5,
+                    },
+                    1920: {
+                        slidesPerView: 6,
+                    },
+                },
+            });
+        </script>        
+          
+
+    </main>
+    
+    <footer></footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
