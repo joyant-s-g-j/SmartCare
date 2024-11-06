@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="overflow-x-hidden">
     <header class="bg-white-200 h-screen">
@@ -58,58 +57,16 @@
         </div>
 
         
-        <div class="services-slider swiper flex justify-center items-center mt-10 gap-4">
-            <div class="relative flex mx-auto items-center overflow-hidden w-[70%]">
-                <!-- Carousel Content -->
-                <div class="flex mx-5 gap-10 transition-transform duration-300" id="carousel">
-                    <!-- Add your slides here -->
-                </div>
+        <div class="services-slider swiper overflow-hidden w-[80%] my-10">
+            <div class="swiper-wrapper">
+
             </div>
-        
-            <!-- Swiper Pagination -->
+
             <div class="swiper-pagination"></div>
         
-            <!-- Swiper Navigation Buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-        
-        <!-- Swiper JS -->
-        <script>
-            const swiper = new Swiper('.services-slider', {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 1,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                    },
-                    1280: {
-                        slidesPerView: 4,
-                    },
-                    1600: {
-                        slidesPerView: 5,
-                    },
-                    1920: {
-                        slidesPerView: 6,
-                    },
-                },
-            });
-        </script>        
+            <div class="swiper-button-next text-teal-600 right-[-5px]"></div>
+            <div class="swiper-button-prev text-teal-600 left-[-5px]"></div>
+        </div>    
           
 
     </main>

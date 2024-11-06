@@ -5,3 +5,8 @@ html{
     width: 0;
 }
 
+/* Add this to your CSS file or within a <style> tag */
+.swiper-pagination-bullet-active {
+    background-color: #0f766e; 
+    transform: scale(1.5);
+}
