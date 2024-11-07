@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
-<body class="overflow-x-hidden">
+<body class=" bg-teal-50">
     <header class="bg-white-200 h-screen">
-        <nav class="fixed top-0 left-0 right-0 bg-white px-10 py-6 flex justify-between">
+        <nav class="fixed top-0 left-0 right-0 bg-white px-10 py-6 flex justify-between z-50">
             <div class="flex">
                 <img class="h-12" src="Images/stethoscope 1.png" alt="logo">
                 <img class="w-32 h-10" src="Images/SmartCare.png" alt="">
@@ -56,8 +56,7 @@
             <p class="font-semibold text-teal-900 text-xl">We offer a comprehensive range of healthcare services designed to meet your <br> needs with compassion and expertise. Our commitment is to deliver high-quality care, <br> from preventative screenings to specialized treatments, ensuring a healthier, happier life for every patient.</p>            
         </div>
 
-        
-        <div class="services-slider swiper overflow-hidden w-[80%] my-10">
+        <div class="services-slider swiper w-[80%] my-10">
             <div class="swiper-wrapper">
 
             </div>
@@ -67,7 +66,56 @@
             <div class="swiper-button-next text-teal-600 right-[-5px]"></div>
             <div class="swiper-button-prev text-teal-600 left-[-5px]"></div>
         </div>    
-          
+        
+        <div class="m-10 flex">
+            <div class="w-full md:w-1/3 text-center">
+                <div class="menu flex text-[16px] leading-[1.6] text-[#02312d]">
+                    <div class="item relative group">
+                        <a href="#" class="link relative flex items-center justify-center gap-3 py-3 px-9 rounded-xl border shadow-xl overflow-hidden transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:text-white group-hover:bg-[#0F766E]">
+                            <span class="font-bold">Our Services</span>
+                            <svg viewBox="0 0 360 360" class="w-3.5 h-3.5 fill-current transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:rotate-180 group-hover:fill-white">
+                                <g>
+                                    <path d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 
+                                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 
+                                    s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <div class="submenu absolute top-full left-0 w-full flex flex-col items-center shadow-xl rounded-b-xl border border-[#cccccc] opacity-0 translate-y-[-12px] transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:opacity-100 group-hover:translate-y-0 z-10">
+                            <div class="submenu-item w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)]">
+                                <a href="#" class="submenu-link block py-3 px-6 text-center text-teal-800 font-semibold relative w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] before:absolute before:top-0 before:right-0 before:h-full before:w-full hover:bg-[#065a53] before:scale-x-0 before:origin-left before:transition-transform before:duration-[0.48s] hover:text-white hover:before:scale-x-100 hover:before:origin-left">Name</a>
+                            </div>
+                            <div class="submenu-item w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group relative">
+                                <a href="javascript:void(0)" class="submenu-link block py-3 px-6 text-center text-teal-800 font-semibold relative w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] before:absolute before:top-0 before:right-0 before:h-full before:w-full hover:bg-[#065a53] before:scale-x-0 before:origin-left before:transition-transform before:duration-[0.48s] hover:text-white hover:before:scale-x-100 hover:before:origin-right" onclick="toggleDropdown('designation')">Designation</a>
+                                
+                                <ul id="drop-deg" class="hidden absolute bg-white shadow-lg ml-48 w-full z-10">
+
+                                </ul>
+                            </div>
+                                                    
+                            <div class="submenu-item w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group relative">
+                                <a href="javascript:void(0)" class="submenu-link block py-3 px-6 text-center text-teal-800 font-semibold relative w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] before:absolute before:top-0 before:right-0 before:h-full before:w-full hover:bg-[#065a53] before:scale-x-0 before:origin-left before:transition-transform before:duration-[0.48s] hover:text-white hover:before:scale-x-100 hover:before:origin-left" onclick="toggleDropdown('specialization')">Specialisation</a>
+                                
+                                <ul id="drop-sep" class="hidden absolute bg-white shadow-lg ml-48 w-full z-10">
+
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="mb-24">
+                <div class="input-container mb-3">
+                    <input type="text" name="text" class="input" placeholder="Search doctor...">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" class="icon"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <rect fill="white" height="24" width="24"></rect> <path fill="" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                </div>
+                <div id="doctors" class="flex flex-wrap justify-start gap-6">
+
+                </div>
+                
+            </div>
+        </div>
 
     </main>
     

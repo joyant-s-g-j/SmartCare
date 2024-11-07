@@ -5,8 +5,124 @@ html{
     width: 0;
 }
 
-/* Add this to your CSS file or within a <style> tag */
 .swiper-pagination-bullet-active {
     background-color: #0f766e; 
     transform: scale(1.5);
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+.input {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 18px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.input::placeholder {
+    color: transparent;
+}
+
+.input:focus::placeholder {
+    color: rgb(131, 128, 128);
+}
+
+.input:focus,.input:not(:placeholder-shown) {
+    background-color: #fff;
+    border: 1px solid #0F766E;
+    width: 290px;
+    cursor: none;
+    padding: 18px 16px 18px 45px;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    border-radius: 99px;
+    z-index: -1;
+    fill: #0F766E;
+    border: 1px solid #0F766E;
+}
+
+.input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
+}
+
+  /* From Uiverse.io by alexmaracinaru */ 
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #0F766E;
+  }
+  
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #1de3d2;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  
+.cta:hover svg {
+    transform: translateX(0);
+  }
+  
+.cta:active {
+    transform: scale(0.95);
+  }
+
+
+  .hidden {
+    display: none;
 }
