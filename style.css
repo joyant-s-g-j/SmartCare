@@ -39,9 +39,8 @@ html{
 
 .input:focus,.input:not(:placeholder-shown) {
     background-color: #fff;
-    border: 1px solid #0F766E;
-    width: 290px;
-    cursor: none;
+    border: 2px solid #0F766E;
+    width: 300px;
     padding: 18px 16px 18px 45px;
 }
 
@@ -55,7 +54,14 @@ html{
     z-index: -1;
     fill: #0F766E;
     border: 1px solid #0F766E;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
+.input:focus + .icon {
+    left: 20.5rem;
+    transform: translateX(-50%);
+}
+
 
 .input:focus + .icon,.input:not(:placeholder-shown) + .icon {
     z-index: 0;
@@ -123,6 +129,6 @@ html{
   }
 
 
-  .hidden {
+.hidden {
     display: none;
 }
