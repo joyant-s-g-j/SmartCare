@@ -21,6 +21,8 @@
                 <div class="flex gap-10 cursor-pointer items-center justify-center">
                     <a href="#home" class="text-teal-900 hover:text-teal-600">Home</a>
                     <a href="#services" class="text-teal-900 hover:text-teal-600">Service</a>
+                    <a href="#members" class="text-teal-900 hover:text-teal-600">Doctors</a>
+                    <a href="#reviews" class="text-teal-900 hover:text-teal-600">Reviews</a>
                     <a href="" class="text-teal-900 hover:text-teal-600">Contact us</a>
                     <button class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-teal-500 rounded-md group">
                         <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-teal-700 rounded group-hover:-mr-4 group-hover:-mt-4">
@@ -50,78 +52,95 @@
         </div>
     </header>
     
-    <main class="h-screen" id="services">
-        <div class="text-center flex flex-col gap-8">
-            <h1 class="font-bold mt-24 text-teal-600 text-5xl">Services We Provide</h1>
-            <p class="font-semibold text-teal-900 text-xl">We offer a comprehensive range of healthcare services designed to meet your <br> needs with compassion and expertise. Our commitment is to deliver high-quality care, <br> from preventative screenings to specialized treatments, ensuring a healthier, happier life for every patient.</p>            
-        </div>
-
-        <div class="services-slider swiper w-[80%] my-10">
-            <div class="swiper-wrapper">
-
+    <main>
+        <div class="h-screen" id="services">
+            <div class="text-center flex flex-col gap-8">
+                <h1 class="font-bold mt-24 text-teal-600 text-5xl">Services We Provide</h1>
+                <p class="font-semibold text-teal-900 text-xl">We offer a comprehensive range of healthcare services designed to meet your <br> needs with compassion and expertise. Our commitment is to deliver high-quality care, <br> from preventative screenings to specialized treatments, ensuring a healthier, happier life for every patient.</p>            
             </div>
-
-            <div class="swiper-pagination"></div>
-        
-            <div class="swiper-button-next text-teal-600 right-[-5px]"></div>
-            <div class="swiper-button-prev text-teal-600 left-[-5px]"></div>
-        </div>    
-        
-        <div class="m-10 flex">
-            <div class="w-full md:w-1/3 text-center">
-                <div class="menu flex text-[16px] leading-[1.6] text-[#02312d]">
-                    <div class="item relative group">
-                        <a href="#" class="link relative flex items-center justify-center gap-3 py-3 px-9 rounded-xl border shadow-xl overflow-hidden transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:text-white group-hover:bg-[#0F766E]">
-                            <span class="font-bold">Our Services</span>
-                            <svg viewBox="0 0 360 360" class="w-3.5 h-3.5 fill-current transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:rotate-180 group-hover:fill-white">
-                                <g>
-                                    <path d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 
-                                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 
-                                    s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
-                                </g>
-                            </svg>
-                        </a>
-                        <div class="submenu absolute top-full left-0 w-full flex flex-col items-center shadow-xl rounded-b-xl border border-[#cccccc] opacity-0 translate-y-[-12px] transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:opacity-100 group-hover:translate-y-0 z-10">
-                            <div class="submenu-item w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group relative">
-                                <a href="javascript:void(0)" class="submenu-link block py-3 px-6 text-center text-teal-800 font-semibold relative w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] before:absolute before:top-0 before:right-0 before:h-full before:w-full hover:bg-[#065a53] before:scale-x-0 before:origin-left before:transition-transform before:duration-[0.48s] hover:text-white hover:before:scale-x-100 hover:before:origin-right" onclick="toggleDropdown('designation')">Designation</a>
-                                
-                                <ul id="drop-deg" class="hidden absolute shadow-lg ml-48 w-full z-10">
-
-                                </ul>
+    
+            <div class="services-slider swiper w-[80%] my-10">
+                <div class="swiper-wrapper">
+    
+                </div>
+    
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-next text-teal-600 right-[-5px]"></div>
+                <div class="swiper-button-prev text-teal-600 left-[-5px]"></div>
+            </div>  
+        </div>
+          
+        <div class="h-screen" id="members">
+            <div class="m-10 flex">
+                <div class="w-full md:w-1/3 mt-20 text-center">
+                    <div class="menu mt-16 flex text-[16px] leading-[1.6] text-[#02312d]">
+                        <div class="item relative group">
+                            <a href="#" class="link relative flex items-center justify-center gap-3 py-3 px-9 rounded-xl border shadow-xl overflow-hidden transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:text-white group-hover:bg-[#0F766E]">
+                                <span class="font-bold">Team Members</span>
+                                <svg viewBox="0 0 360 360" class="w-3.5 h-3.5 fill-current transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:rotate-180 group-hover:fill-white">
+                                    <g>
+                                        <path d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 
+                                        c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 
+                                        s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                            <div class="submenu absolute top-full left-0 w-full flex flex-col items-center shadow-xl rounded-b-xl border border-[#cccccc] opacity-0 translate-y-[-12px] transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:opacity-100 group-hover:translate-y-0 z-10">
+                                <div class="submenu-item w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group relative">
+                                    <a href="javascript:void(0)" class="submenu-link block py-3 px-6 text-center text-teal-800 font-semibold relative w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] before:absolute before:top-0 before:right-0 before:h-full before:w-full hover:bg-[#065a53] before:scale-x-0 before:origin-left before:transition-transform before:duration-[0.48s] hover:text-white hover:before:scale-x-100 hover:before:origin-right" onclick="toggleDropdown('designation')">Designation</a>
+                                    
+                                    <ul id="drop-deg" class="hidden absolute shadow-lg ml-52 w-full z-10">
+    
+                                    </ul>
+                                </div>
+                                                        
+                                <div class="submenu-item w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group relative">
+                                    <a href="javascript:void(0)" class="submenu-link block py-3 px-6 text-center text-teal-800 font-semibold relative w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] before:absolute before:top-0 before:right-0 before:h-full before:w-full hover:bg-[#065a53] before:scale-x-0 before:origin-left before:transition-transform before:duration-[0.48s] hover:text-white hover:before:scale-x-100 hover:before:origin-left" onclick="toggleDropdown('specialization')">Specialization</a>
+                                    
+                                    <ul id="drop-sep" class="hidden absolute bg-white shadow-lg ml-52 w-full z-10">
+    
+                                    </ul>
+                                </div>
                             </div>
-                                                    
-                            <div class="submenu-item w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] group relative">
-                                <a href="javascript:void(0)" class="submenu-link block py-3 px-6 text-center text-teal-800 font-semibold relative w-full transition-all duration-[0.48s] ease-[cubic-bezier(0.23,1,0.32,1)] before:absolute before:top-0 before:right-0 before:h-full before:w-full hover:bg-[#065a53] before:scale-x-0 before:origin-left before:transition-transform before:duration-[0.48s] hover:text-white hover:before:scale-x-100 hover:before:origin-left" onclick="toggleDropdown('specialization')">Specialization</a>
-                                
-                                <ul id="drop-sep" class="hidden absolute bg-white shadow-lg ml-48 w-full z-10">
-
-                                </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="mt-16 flex flex-col gap-8">
+                        <h1 class="font-bold text-teal-600 mt-20 text-5xl">Meet Our Doctors</h1>
+                        <p class="font-semibold text-teal-900 text-xl">Our dedicated team of doctors offers expert care, from general consultations to <br> specialized treatments, ensuring your health and well-being are our top priorities.</p>
+                    </div>
+                    <div class="flex p-5">
+                        <div class="rounded-lg bg-teal-100 p-5">
+                            <div class="flex">
+                                <div class="flex w-10 items-center justify-center rounded-tl-lg rounded-bl-lg border-r border-gray-200 bg-teal-50 p-5">
+                                    <svg viewBox="0 0 20 20" aria-hidden="true" class="pointer-events-none absolute w-5 fill-teal-800 transition">
+                                        <path d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z"></path>
+                                    </svg>
+                                </div>
+                                <input type="text" class="w-full max-w-[200px] bg-teal-50 pl-2 text-base font-semibold outline-0" placeholder="Search doctors..." id="search-box">
+                                <button class="search bg-teal-600 cursor-pointer p-2 rounded-tr-lg rounded-br-lg text-white font-semibold hover:bg-teal-900 transition-colors">Search</button>                            
                             </div>
                         </div>
+                    </div>
+                    <div id="doctors" class="flex flex-wrap justify-start gap-6">              
                         
                     </div>
-                </div>
-            </div>
-            <div class="mb-24">
-                <div class="flex items-center justify-center p-5">
-                    <div class="rounded-lg bg-teal-100 p-5">
-                        <div class="flex">
-                            <div class="flex w-10 items-center justify-center rounded-tl-lg rounded-bl-lg border-r border-gray-200 bg-teal-50 p-5">
-                                <svg viewBox="0 0 20 20" aria-hidden="true" class="pointer-events-none absolute w-5 fill-teal-800 transition">
-                                    <path d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z"></path>
-                                </svg>
-                            </div>
-                            <input type="text" class="w-full max-w-[200px] bg-teal-50 pl-2 text-base font-semibold outline-0" placeholder="Search doctors..." id="search-box">
-                            <button class="search bg-teal-600 cursor-pointer p-2 rounded-tr-lg rounded-br-lg text-white font-semibold hover:bg-teal-900 transition-colors">Search</button>                            
-                        </div>
+                    <div id="nodata" class="nodata">
+                        <img src="Images/nodata.png" alt="">
                     </div>
                 </div>
-                <div id="doctors" class="flex flex-wrap justify-start gap-6">              
-                    
-                </div>
-                <div id="nodata" class="nodata">
-                    <img src="Images/nodata.png" alt="">
-                </div>
+            </div>
+        </div>
+        <div class="h-screen" id="reviews">
+            <div class="mt-24 mb-16 text-center flex flex-col gap-8">
+                <h1 class="font-bold text-teal-600 mt-28 text-5xl">Clients Review about us</h1>
+                <p class="font-semibold text-teal-900 text-xl">Our doctors provide expert care, prioritizing your health and well-being.</p>            
+            </div>
+            <div class="flex m-10 items-center justify-center gap-3" id="review-container">
+                  
             </div>
         </div>
 

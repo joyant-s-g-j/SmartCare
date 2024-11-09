@@ -1,10 +1,40 @@
 const loadServices = () => {
     fetch("https://testing-8az5.onrender.com/services/")
-      .then((res) => res.json())
-      .then((data) => displayService(data))
-      .catch((err) => console.log(err));
-  };
-  
+    .then((res) => res.json())
+    .then((data) => displayService(data))
+    .catch((err) => console.log(err));
+};
+
+const loadReviews = () => {
+    fetch("https://test-thto.onrender.com/doctor/review/")
+    .then((res) => res.json())
+    .then((data) => displayReview(data))
+    .catch((err) => console.log(err));
+};
+
+const displayReview = (reviews) => {
+    reviews.forEach((review) => {
+        const parent = document.getElementById("review-container");
+        const div = document.createElement("div")
+        div.innerHTML = `
+            <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                    <img class="w-12 h-12 rounded-full mr-4" src="Images/girl.png" alt="User Avatar">
+                    <div>
+                    <h2 class="text-lg text-teal-800 font-bold">${review.reviewer}</h2>
+                    <p class="text-sm font-semibold text-teal-600">Verified Patient</p>
+                    </div>
+                </div>
+                
+                <div class="items-center mb-4">${review.rating}</div>
+                
+                <p class="text-teal-700 font-semibold text-sm">${review.body.slice(0, 140)}</p>
+            </div>
+        `;
+        parent.appendChild(div);
+    });
+};
+
 const displayService = (services) => {
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 swiperWrapper.innerHTML = "";
@@ -192,4 +222,5 @@ window.addEventListener('load', () => {
     loadDesignation();
     loadSpecialization();
     handleSearchBtn();
+    loadReviews();
 });
