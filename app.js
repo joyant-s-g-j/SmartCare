@@ -131,7 +131,7 @@ const displayDoctors = (doctors) => {
                 return `<button class="bg-teal-600 mx-1 text-white py-2 px-4 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500">${item}</button>`;
             }).join('')}</p>
             <button class="cta flex items-center gap-1 group mx-auto text-teal-600">
-                <span class="transition-all duration-300">Details</span>
+                <span class="transition-all duration-300"><a href="docDetails.html?doctorId=${doctor.id}">Details</a></span>
                 <svg width="15px" height="10px" viewBox="0 0 15 10" class="transition-all duration-300 transform group-hover:translate-x-2">
                     <path d="M1,5 L11,5" stroke="currentColor" stroke-width="2" fill="none"></path>
                     <polyline points="8 1 12 5 8 9" stroke="currentColor" stroke-width="2" fill="none"></polyline>

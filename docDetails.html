@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctors Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <nav class="fixed top-0 left-0 right-0 bg-white px-10 py-6 flex justify-between z-50">
+        <div class="flex">
+            <img class="h-12" src="Images/stethoscope 1.png" alt="logo">
+            <img class="w-32 h-10" src="Images/SmartCare.png" alt="">
+        </div>
+        <div class="flex pt-2 font-semibold">
+            <div class="flex gap-10 cursor-pointer items-center justify-center">
+                <a href="#home" class="text-teal-900 hover:text-teal-600">Home</a>
+                <a href="#services" class="text-teal-900 hover:text-teal-600">Service</a>
+                <a href="#members" class="text-teal-900 hover:text-teal-600">Doctors</a>
+                <a href="#reviews" class="text-teal-900 hover:text-teal-600">Reviews</a>
+                <button class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-teal-500 rounded-md group">
+                    <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-teal-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                    <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                    </span>
+                    <span class="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-teal-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                    <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                    </span>
+                    <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-teal-600 rounded-md group-hover:translate-x-0"></span>
+                    <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">Get Appoinment</span> 
+                </button>
+            </div>                
+        </div>
+    </nav>
     
+    <div id="doc-details" class="mt-24 p-10">
+
+        
+    </div>
+    <h1 class="font-bold text-center text-teal-600 text-5xl">RATINGS FROM PATIENTS</h1>
+    <div id="doc-reviews" class="mb-24 flex m-10 items-center justify-center gap-3">
+
+    </div>
+
+    <footer class="bg-teal-800 text-white py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-5">
+            
+            <!-- Column 1: Company Info -->
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-bold text-xl">Copyright © Smartcare. All Rights Reserved</h2>
+                <p class="font-semibold">Providing top-notch healthcare services to <br> ensure the wellness of our patients.</p>
+                <p class="font-semibold">Follow us</p>
+                <div class="flex gap-1">
+                    <img src="Images/LinkedIn.png" alt="LinkedIn">
+                    <img src="Images/YouTube.png" alt="">
+                </div>
+            </div>
+    
+            <!-- Column 2: Useful Links -->
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-bold text-xl">Useful Links</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact us</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                    <li><a href="#" class="hover:underline">Culture</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 3: Contact Information -->
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-bold text-xl">Support</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Getting started</a></li>
+                    <li><a href="#" class="hover:underline">Help center</a></li>
+                    <li><a href="#" class="hover:underline">Server status</a></li>
+                    <li><a href="#" class="hover:underline">Report a bug</a></li>
+                    <li><a href="#" class="hover:underline">Chat support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="docDetails.js"></script>
 </body>
 </html>
