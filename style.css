@@ -132,4 +132,43 @@ html{
 .hidden {
     display: none;
 }
+#container.active .sign-in{
+  transform: translateX(100%);
+}
 
+#container.active .sign-up{
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: move 1s;
+}
+
+@keyframes move{
+  0%, 49.99%{
+    opacity: 0;
+    z-index: 1;
+  }
+  50%, 100%{
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+#container.active .toggle-container{
+  transform: translateX(-100%);
+  border-radius: 0 150px 100px 0;
+}
+
+#container.active .toggle{
+  transform: translateX(50%);
+}
+
+
+#container.active .toggle-left{
+  transform: translateX(0);
+}
+
+
+#container.active .toggle-right{
+  transform: translateX(200%);
+}

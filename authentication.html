@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="fixed top-0 left-0 right-0 bg-white px-10 py-6 flex justify-between z-50">
+        <div class="flex">
+            <img class="h-12" src="Images/stethoscope 1.png" alt="logo">
+            <img class="w-32 h-10" src="Images/SmartCare.png" alt="">
+        </div>
+        <div class="flex pt-2 font-semibold">
+            <div class="flex gap-10 cursor-pointer items-center justify-center">
+                <a href="index.html#home" class="text-teal-900 hover:text-teal-600">Home</a>
+                <a href="index.html#services" class="text-teal-900 hover:text-teal-600">Service</a>
+                <a href="index.html#members" class="text-teal-900 hover:text-teal-600">Doctors</a>
+                <a href="index.html#reviews" class="text-teal-900 hover:text-teal-600">Reviews</a>
+                <button class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-teal-500 rounded-md group"><a href="login.html">
+                    <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-teal-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                    <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                    </span>
+                    <span class="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-teal-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                    <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                    </span>
+                    <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-teal-600 rounded-md group-hover:translate-x-0"></span>
+                    <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">Authenticate</span></a>
+                </button>
+            </div>                
+        </div>
+    </nav>
+    <main class="flex mt-32 justify-center items-center">
+        <div class="p-10 bg-teal-50 rounded-[30px] shadow-[0_5px_15px_rgba(0,0,0,0.35)] relative overflow-hidden w-[768px] max-w-full min-h-[480px]" id="container">
+            <div class="sign-up absolute top-0 h-full transition-all duration-1000 ease-in-out left-0 w-1/2 opacity-100 z-10">
+                <form class="flex flex-col bg-teal-50 justify-center items-center px-10 py-0 h-full">
+                    <h1 class="font-sans font-bold text-4xl mb-7 text-teal-900">Create Account</h1>
+                    <input class="bg-teal-100 border-none my-2 py-2 px-4 text-sm rounded-lg w-full outline-none" type="text" placeholder="Name">
+                    <input class="bg-teal-100 border-none my-2 py-2 px-4 text-sm rounded-lg w-full outline-none" type="email" placeholder="Email">
+                    <input class="bg-teal-100 border-none my-2 py-2 px-4 text-sm rounded-lg w-full outline-none" type="password" placeholder="Password">
+                    <button class="cursor-pointer bg-teal-600 text-white font-bold mt-3 py-2 px-6 rounded-lg hover:bg-teal-800">Sign Up</button> 
+                </form>
+            </div>
+            <div class="sign-in absolute top-0 h-full transition-all duration-1000 ease-in-out left-0 w-1/2 z-20">
+                <form class="flex flex-col bg-teal-50 justify-center items-center px-10 py-0 h-full">
+                    <h1 class="font-bold text-4xl mb-7 text-teal-900">Sign In</h1>
+                    <input class="bg-teal-100 border-none my-2 py-2 px-4 text-sm rounded-lg w-full outline-none" type="email" placeholder="Email">
+                    <input class="bg-teal-100 border-none my-2 py-2 px-4 text-sm rounded-lg w-full outline-none" type="password" placeholder="Password">
+                    <a class="text-teal-900 font-semibold" href="#">Forget Your Password?</a>
+                    <button class="cursor-pointer mt-3 bg-teal-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-teal-800">Sign In</button> 
+                </form>
+            </div>
+            <div class="toggle-container absolute top-0 left-1/2 w-1/2 h-full overflow-hidden transition-all duration-1000 ease-in-out rounded-[150px_0_0_100px] z-[1000]">
+                <div class="toggle bg-teal-700 h-full bg-gradient-to-r from-teal-500 to-teal-700 text-white relative left-[-100%] h-full w-[200%] transform translate-x-0 transition-all duration-1000 ease-in-out">
+                    <div class="absolute w-1/2 h-full flex items-center justify-center flex-col px-8 text-center top-0 translate-x-0 transition-all duration-600 ease-in-out translate-x-[-200%] toggle-left">
+                        <h1 class="font-bold text-4xl mb-7">Welcome</h1>
+                        <p class="font-semibold">Enter your personal details use all of site features</p>
+                        <button id="login" class="w-[150px] bg-teal-800 font-bold h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-teal-500 before:to-teal-600 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]">
+                            Sign In
+                        </button>
+                    </div>
+                    <div class="absolute w-1/2 h-full flex items-center justify-center flex-col px-8 text-center top-0 translate-x-0 transition-all duration-600 ease-in-out right-0 toggle-right">
+                        <h1 class="font-bold text-4xl mb-7">Hello, Explorer!</h1>
+                        <p class="font-semibold">Register with your personal details to use all of site features</p>
+                        <button id="register" class="w-[150px] bg-teal-800 font-bold h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:right-[-100%] before:w-full before:h-full before:bg-gradient-to-l before:from-teal-500 before:to-teal-600 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:right-0 text-[#fff]">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="authentication.js"></script>
+</body>
+</html>
