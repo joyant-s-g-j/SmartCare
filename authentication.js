@@ -7,7 +7,6 @@ registerBtn.addEventListener('click', () => {
     const signUp = document.querySelector(".sign-up");
     const signIn = document.querySelector(".sign-in");
 
-    // Set the sign-up form visible and hide the sign-in form
     signUp.style.opacity = "1";
     signUp.style.zIndex = "5";
     signIn.style.opacity = "0";
@@ -19,7 +18,6 @@ loginBtn.addEventListener('click', () => {
     const signUp = document.querySelector(".sign-up");
     const signIn = document.querySelector(".sign-in");
 
-    // Set the sign-in form visible and hide the sign-up form
     signIn.style.opacity = "1";
     signIn.style.zIndex = "5";
     signUp.style.opacity = "0";
